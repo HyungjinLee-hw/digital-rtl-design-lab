@@ -93,7 +93,7 @@ module alu #(               // #( ) declares configurable compile-time parameter
             // Result is 1 if equal, otherwise 0.
             OP_EQ: begin
                 result = (a == b) ? {{(WIDTH-1){1'b0}}, 1'b1} : {WIDTH{1'b0}};
-                // Condition? value when true : value when false
+                // Condition ? {value when true} : {value when false}
             end
 
             // Unsigned less-than comparison.
