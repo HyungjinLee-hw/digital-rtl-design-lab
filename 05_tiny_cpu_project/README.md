@@ -14,6 +14,10 @@ The purpose is not to immediately build a complex processor, but to first design
 
 
 
+Each block is implemented and tested seperately before being connected into a complete CPU
+
+
+
 
 
 \## Design Approach
@@ -52,7 +56,8 @@ Implemented:
 
 
 
-\- Parameterized ALU
+* Parameterized ALU
+* Parameterized Register file
 
 
 
@@ -60,15 +65,10 @@ Planned:
 
 
 
-\- Register file
-
-\- Program counter
-
-\- Instruction memory
-
-\- Control unit
-
-\- Datapath integration
+* Program counter
+* Instruction memory
+* Control unit
+* Datapath integration
 
 
 
@@ -104,7 +104,11 @@ Planned:
 
 │   ├── rtl/
 
+│   │   └── register\_file.v
+
 │   ├── tb/
+
+│   │   └── register\_file\_tb.v
 
 │   └── README.md
 
@@ -147,6 +151,4 @@ Planned:
 &#x20;   ├── tb/
 
 &#x20;   └── README.md
-
-
 
