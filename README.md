@@ -20,21 +20,17 @@ A step-by-step CPU design project based on individually designed and verified RT
 
 Implemented:
 
-\- Parameterized ALU
+* Parameterized ALU
+* Register file
 
 
 
 Planned:
 
-\- Register file
-
-\- Program counter
-
-\- Instruction memory
-
-\- Control unit
-
-\- Datapath integration
+* Program counter
+* Instruction memory
+* Control unit
+* Datapath integration
 
 
 
@@ -43,6 +39,4 @@ Planned:
 \- Xilinx Vivado (Verilog HDL)
 
 \- Zybo / Zynq-7020 FPGA board
-
-
 
