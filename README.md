@@ -22,12 +22,14 @@ Implemented:
 
 * Parameterized ALU
 * Register file
+* Program counter
 
 
 
 Planned:
 
-* Program counter
+
+
 * Instruction memory
 * Control unit
 * Datapath integration

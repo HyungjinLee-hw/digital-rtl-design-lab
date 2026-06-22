@@ -58,6 +58,7 @@ Implemented:
 
 * Parameterized ALU
 * Parameterized Register file
+* Program counter
 
 
 
@@ -65,7 +66,6 @@ Planned:
 
 
 
-* Program counter
 * Instruction memory
 * Control unit
 * Datapath integration
@@ -118,7 +118,11 @@ Planned:
 
 │   ├── rtl/
 
+│   │   └──program\_counter.v
+
 │   ├── tb/
+
+│   │   └── program\_counter\_tb.v
 
 │   └── README.md
 
