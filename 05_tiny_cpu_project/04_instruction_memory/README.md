@@ -50,21 +50,15 @@ The current Tiny CPU uses 16-bit instructions and word addressing.
 
 ├── rtl/
 
-
-
 │   └── instruction\_memory.v
-
-
-
-├── tb/
-
-
-
-│   ├── instruction\_memory\_tb.v
 
 │   └── program.mem
 
+│   └── tiny_cpu_defs.vh
 
+├── tb/
+
+│   ├── instruction\_memory\_tb.v
 
 └── README.md
 
