@@ -59,6 +59,7 @@ Implemented:
 * Parameterized ALU
 * Parameterized Register file
 * Program counter
+* Instruction memory
 
 
 
@@ -66,7 +67,6 @@ Planned:
 
 
 
-* Instruction memory
 * Control unit
 * Datapath integration
 
@@ -118,7 +118,7 @@ Planned:
 
 │   ├── rtl/
 
-│   │   └──program\_counter.v
+│   │   └── program\_counter.v
 
 │   ├── tb/
 
@@ -130,11 +130,19 @@ Planned:
 
 ├── 04\_instruction\_memory/
 
-&#x20;   ├── rtl/
+│  ├── rtl/
 
-&#x20;   ├── tb/
+│   │   └── instruction\_memory.v
 
-&#x20;   └── README.md
+│   │   └── program.mem
+
+│   │   └── tiny\_cpu\_defs.vh
+
+│   ├── tb/
+
+│   │   └── instruction\_memory\_tb.v
+
+│  └── README.md
 
 
 

@@ -23,6 +23,9 @@ Implemented:
 * Parameterized ALU
 * Register file
 * Program counter
+* Instruction memory
+
+
 
 
 
@@ -30,7 +33,6 @@ Planned:
 
 
 
-* Instruction memory
 * Control unit
 * Datapath integration
 

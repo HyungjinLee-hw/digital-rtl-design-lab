@@ -1,0 +1,67 @@
+// ============================================================
+// Tiny CPU test program
+//
+// Instruction format:
+// R-type: [15:12] opcode | [11:10] rd | [9:8] rs1 | [7:6] rs2 | [5:0] reserved
+// MOVI:   [15:12] opcode | [11:10] rd | [9:8] unused | [7:0] imm8
+// ============================================================
+
+
+// MOVI r1, 15 : assembly
+// 0001(MOVI)_01(rd)_00(unused)_0000_1111(imm8) : bit
+// r1 = 15
+140F
+
+// MOVI r2, 3
+// r2 = 3
+1803
+
+
+// ADD r3, r1, r2
+// r3 = r1 + r2 = 15 + 3 = 18 = 8'h12
+2D80
+
+// SUB r3, r1, r2
+// r3 = r1 - r2 = 15 - 3 = 12 = 8'h0C
+3D80
+
+// AND r3, r1, r2
+// r3 = r1 & r2 = 15 & 3 = 3 = 8'h03
+4D80
+
+// OR r3, r1, r2
+// r3 = r1 | r2 = 15 | 3 = 15 = 8'h0F
+5D80
+
+// XOR r3, r1, r2
+// r3 = r1 ^ r2 = 15 ^ 3 = 12 = 8'h0C
+6D80
+
+
+// EQ r3, r1, r2
+// r3 = (r1 == r2) ? 1 : 0
+// r3 = (15 == 3) ? 1 : 0 = 0
+7D80
+
+// LT r3, r2, r1
+// Unsigned comparison
+// r3 = (r2 < r1) ? 1 : 0
+// r3 = (3 < 15) ? 1 : 0 = 1
+8E40
+
+
+// MOV r3, r1
+// Uses ALU PASSA internally.
+// r3 = r1 = 15
+9D00
+
+// MOV r2, r3
+// Uses ALU PASSA internally.
+// r2 = r3 = 15
+9B00
+
+
+// HALT
+// Stop CPU execution.
+// PC no longer increments and no register write occurs.
+A000
